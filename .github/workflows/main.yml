@@ -21,7 +21,7 @@ jobs:
           sudo apt-get install ffmpeg curl rar python3 atomicparsley aria2 -y
           curl -LJO https://github.com/ytdl-patched/ytdl-patched/releases/latest/download/ytdl-patched
           chmod +x ./ytdl-patched
-          ./yt-dlp --config-location dl.conf
+          ./ytdl-patched --config-location dl.conf
           python3 ./deal_download_files.py
 
 
